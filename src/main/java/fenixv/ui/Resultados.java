@@ -517,13 +517,14 @@ public class Resultados extends javax.swing.JFrame {
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(16, 16, 16)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabelQuickSort)
-                    .addComponent(jLabelNomeResultadoQuickSortComparacoes)
-                    .addComponent(jLabelTituloComparacoes1)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(jLabelMovimentacoes)
-                        .addComponent(jLabelNomeResultadoQuickSortMovimentacoes)))
+                        .addComponent(jLabelNomeResultadoQuickSortMovimentacoes))
+                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jLabelQuickSort)
+                        .addComponent(jLabelNomeResultadoQuickSortComparacoes)
+                        .addComponent(jLabelTituloComparacoes1)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jProgressBarQuickSort, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(32, 32, 32)
@@ -626,12 +627,13 @@ public class Resultados extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    // O botão "jButtonVoltarActionPerformed" volta para a primeira janela\Menu a segunda janela invisivel.
     private void jButtonVoltarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonVoltarActionPerformed
         Menu tela = new Menu();
         tela.setVisible(true);
         this.dispose();
     }//GEN-LAST:event_jButtonVoltarActionPerformed
-
+    // São os botões que cada um tem o seu id e chamando o método selecionarBotaoCapacidade().
     private void jButton1000ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1000ActionPerformed
         selecionarBotaoCapacidade(jButton1000, 1);
     }//GEN-LAST:event_jButton1000ActionPerformed
